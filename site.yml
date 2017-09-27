@@ -1,0 +1,23 @@
+---
+- name: Spinup Instance 
+  hosts: localhost
+  become: yes
+  become_method: sudo
+  
+  roles:
+    - instance
+
+- name: Install Tomcat & Deploy files
+  hosts: ec2hosts
+  user: centos
+  become: yes
+  become_method: sudo
+
+  vars_files:
+    - ./group_vars/qa-env
+
+  roles:
+    - firewalld
+    - selinux
+    - tomcat
+
