@@ -19,7 +19,7 @@
     - ./group_vars/qa-env
 
   roles:
-    - firewalld
+    #- firewalld
     - selinux
     - tomcat
 
