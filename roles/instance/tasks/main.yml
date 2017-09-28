@@ -6,7 +6,6 @@
                 region=us-east-1
                 keypair=gittest
                 count=1
-                vpc_subnet_id=subnet-bdb00a91
                 group_id=sg-0128df72
                 wait=true
   register: ec2
