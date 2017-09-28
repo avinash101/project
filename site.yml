@@ -20,6 +20,6 @@
 
   roles:
     #- firewalld
-    - selinux
+   # - selinux
     - tomcat
 
