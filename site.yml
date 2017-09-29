@@ -16,7 +16,7 @@
   become_method: sudo
 
   vars_files:
-    - ./group_vars/qa-env
+    - ./group_vars/variable
          
   roles:
     - firewalld
